@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout con Sidebar y Footer</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;   /* 100% alto pantalla */
+      width: 100vw;    /* 100% ancho pantalla */
+
+      display: grid;
+
+      /* === Definición de columnas y filas === */
+      grid-template-columns: 200px 1fr;   /* Col 1 = sidebar fijo, Col 2 = contenido */
+      grid-template-rows: 1fr 150px;      /* Fila 1 = contenido, Fila 2 = footer */
+
+      /* Definición de las áreas */
+      grid-template-areas:
+        "sidebar main"
+        "footer  footer";
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #f9f6ef;
+      border-right: 1px solid black; /* separación vertical */
+    }
+
+    .main {
+      grid-area: main;
+      background-color: #f9f6ef;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #f9f6ef;
+      border-top: 1px solid black; /* separación horizontal */
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">Sidebar</div>
+  <div class="main">Contenido principal</div>
+  <div class="footer">Footer</div>
+</body>
+</html>
