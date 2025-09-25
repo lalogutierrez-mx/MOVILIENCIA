@@ -1,0 +1,55 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    /* 100% alto pantalla */
+    width: 100vw;
+    /* 100% ancho pantalla */
+
+    display: grid;
+
+    /* === Definición de columnas y filas === */
+    grid-template-columns: 200px 1fr;
+    /* Col 1 = sidebar fijo, Col 2 = contenido */
+    grid-template-rows: 1fr 130px;
+    /* Fila 1 = contenido, Fila 2 = footer */
+
+    /* Definición de las áreas */
+    grid-template-areas:
+        "sidebar main"
+        "footer  footer";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #faf8f3;
+    border-right: 1px solid black;
+    /* separación vertical */
+}
+
+.main {
+    grid-area: main;
+    background-color: #faf8f3;
+
+    /* Centrar contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1 {
+    font-size: 3rem;
+    /* tamaño grande */
+    font-weight: bold;
+    /* negritas */
+    margin: 0;
+    color: #000;
+    /* negro */
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #faf8f3;
+    border-top: 1px solid black;
+    /* separación horizontal */
+}
