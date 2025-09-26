@@ -1,7 +1,28 @@
+
+@font-face {
+    font-family: 'nimbussanl';
+    src: url('nimbussanl-regu-webfont.woff2') format('woff2'),
+         url('nimbussanl-regu-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nimbussanl';
+    src: url('nimbussanl-bold-webfont.woff2') format('woff2'),
+         url('nimbussanl-bold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
 :root {
-    --font-base: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
-    --color-text: #FFF;
-    --color-bg: #000;
+    --font-base: 'nimbussanl', sans-serif;
+    --color-text: #000;
+    --color-bg: #F3ECDA;
+    --color-accent: #7D1F10;
+    --color-neutral: #9EA9AF;
 }
 
 /* Estilos default */
