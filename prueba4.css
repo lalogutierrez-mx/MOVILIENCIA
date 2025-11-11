@@ -165,9 +165,32 @@
   
   /* --- Footer --- */
   footer {
-    text-align: center;
-    font-size: 0.7rem;
-    color: #555;
-    padding: 2rem 0;
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 40px 60px;
+      height: 150px;
+      background-color: #111;
+      color: #fff;
+      border-top: 2px solid white;
+    }
+    
+    .info-left p,
+    .info-right p {
+      margin: 4px 0;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+    
+    /* --- Lado derecho (Instagram y logo) --- */
+    .info-right {
+      text-align: right;
+    }
+    
+    .logo {
+      width: 40px;
+      margin-top: 10px;
+    }
   }
   
