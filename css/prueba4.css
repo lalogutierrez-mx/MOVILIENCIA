@@ -1,4 +1,13 @@
 /* --- Reset básico --- */
+@font-face {
+  font-family: 'NimbusSanL';
+  src: url('NimbusSanL-Regu.woff2') format('woff2'),
+      url('NimbusSanL-Regu.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +16,8 @@
   
   /* --- Tipografía y colores base --- */
   body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    font-family: "NimbusSanL",;
     color: #000;
     background-color: #fff;
   }
