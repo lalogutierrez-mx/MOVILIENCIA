@@ -1,7 +1,7 @@
-class TCIClean {
+class BrazoMask {
 	constructor(_container) {
-		if (!_container) throw "Container es requerido"
-		this.container = document.querySelector(_container)
+		console.log("re")
+		this.container = _container
 		this.clean = this.container.querySelector(".sneaker-clean")
 		this.dirty = this.container.querySelector(".sneaker-dirty")
 		this.friction = 0.15
@@ -67,4 +67,7 @@ class TCIClean {
 	}
 }
 
-const sneaker = new TCIClean(".sneaker-container")
+const items = document.querySelectorAll(".brazo-container")
+items.forEach(item => {
+	const sneaker = new BrazoMask(item)
+})

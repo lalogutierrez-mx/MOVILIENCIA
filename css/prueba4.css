@@ -188,11 +188,12 @@ a#tci-link {
   }
 }
 
-.sneaker-container {
+.brazo-container {
   position: relative;
   cursor: col-resize;
   color: #EA0000;
-
+  width: 100%;
+  display: inline-block;
   img {
     max-width: 100%;
   }
