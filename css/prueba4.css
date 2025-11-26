@@ -258,9 +258,10 @@ footer {
   flex-direction: column;
 }
 .swiper-slide h3 {
+  font-family: "MovilienciaSans";
   text-align: center;
-  font-size: 20px;
-  padding: .1rem;
+  font-size: 40px;
+  /*padding: .1rem;*/
   justify-content: center;
   align-items: center;
 
