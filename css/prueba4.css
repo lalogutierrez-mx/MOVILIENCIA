@@ -169,6 +169,7 @@ img {
   font-size: 0.8rem;
   margin-top: 0.5rem;
   line-height: 1.4;
+  text-align: left;
 }
 
 a#tci-link {
@@ -243,12 +244,58 @@ footer {
 }
 
 /* slider*/
-
 .swiper {
   width: 100%;
   height: 100%;
 }
 
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.swipermasks {
+  height: 80%;
+  width: 100%;
+}
+
+.swiperthumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.swiperthumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.swiperthumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .swiper-slide {
   text-align: center;
   font-size: 17px;

@@ -1,6 +1,5 @@
 class BrazoMask {
 	constructor(_container) {
-		console.log("re")
 		this.container = _container
 		this.clean = this.container.querySelector(".sneaker-clean")
 		this.dirty = this.container.querySelector(".sneaker-dirty")
@@ -14,23 +13,23 @@ class BrazoMask {
 		this.events()
 		this.animate()
 	}
-	
+
 	events() {
 		this.container.addEventListener("pointerenter", (e) => this.onPointerEnter(e), false)
-    this.container.addEventListener("pointerleave", (e) => this.onPointerLeave(e), false)
+		this.container.addEventListener("pointerleave", (e) => this.onPointerLeave(e), false)
 		this.container.addEventListener("pointermove", (e) => this.onPointerMove(e), false)
 	}
-	
+
 	onPointerEnter(e) {
 		this.friction = 0.15
 		this.inOver = true
 	}
-	
+
 	onPointerLeave(e) {
 		this.friction = 0.075
 		this.inOver = false
 	}
-	
+
 	onPointerMove(e) {
 		this.mouse = {
 			x: e.clientX,
@@ -38,29 +37,29 @@ class BrazoMask {
 		}
 		this.render()
 	}
-	
+
 	get percentX() {
 		if (!this.inOver) return 50
 		const _x = (this.mouse.x - this.offset.x)
 		return parseInt((_x / this.rect.width) * 100)
 	}
-	
+
 	get rect() {
 		return this.container.getBoundingClientRect()
 	}
-	
+
 	get offset() {
-			return {
-					x: this.rect.left,
-					y: this.rect.top
-			}
+		return {
+			x: this.rect.left,
+			y: this.rect.top
+		}
 	}
-	
-	animate(){
+
+	animate() {
 		requestAnimationFrame(() => this.animate())
 		this.render()
 	}
-	
+
 	render() {
 		this.x += (this.percentX - this.x) * this.friction
 		this.dirty.style.clipPath = `inset(0% 0% 0% ${this.x}%)`
