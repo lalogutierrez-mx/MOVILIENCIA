@@ -200,11 +200,11 @@ a#tci-link {
     max-width: 100%;
   }
 
-  .sneaker-clean {
+  .image-clean {
     float: left;
   }
 
-  .sneaker-dirty {
+  .image-red {
     position: absolute;
     left: 0;
     top: 0;

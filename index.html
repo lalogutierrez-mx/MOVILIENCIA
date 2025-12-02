@@ -8,6 +8,43 @@
   <title>Moviliencia</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/prueba4.css">
+     <!-- 
+     @metadata: OpenGraph
+     @desc: The Open Graph protocol enables any web page to become a rich object in a social graph
+     @see: https://ogp.me/
+     -->
+     <meta name="title"                      content="JuanFuent.es - Web Developer & Creative Technologist">
+     <meta name='image'                      content='https://juanfuent.es/JuanFuent.es.logotype.png'>
+     <meta name='description'                content='Specializing in innovative digital experiences through experimental web technologies, ensuring scalable and tailored web application solutions.'>
+     <meta name='keywords'                   content='fullstack, web developer, typography, webgl'>
+     <link rel="canonical"                   href="https://juanfuent.es/">
+     <!-- Open Graph / Facebook -->
+     <meta property="og:site_name"           content="JuanFuent.es" />
+     <meta property="og:locale"              content="en"/>
+     <meta property='og:type'                content='website'>
+     <meta property='og:title'               content='Web Developer & Creative Technologist'>
+     <meta property='og:image'               content='https://juanfuent.es/juanfuent.es.og.png'> <!-- cambiar img-->
+     <meta property="og:image:type"          content="image/png"/>
+     <meta property="og:image:width"         content="1200"/>
+     <meta property="og:image:height"        content="640"/>
+     <meta property='og:image'               content='https://juanfuent.es/juanfuent.es-wa.png' itemprop="image"> <!--opt watts-->
+     <meta property='og:description'         content='Specializing in innovative digital experiences through experimental web technologies, ensuring scalable and tailored web application solutions.'>
+     <meta property="og:url"                 content="https://juanfuent.es/">
+     <!--
+      @metadata: Twitter Cards
+      @desc: With X Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. 
+      @see: https://developer.x.com/en/docs/x-for-websites/cards/overview/markup
+      -->
+     <meta property="twitter:card"           content="summary_large_image">
+     <meta property="twitter:url"            content="https://juanfuent.es/">
+     <meta property="twitter:title"          content="Web Developer & Creative Technologist">
+     <meta property="twitter:description"    content="Specializing in innovative digital experiences through experimental web technologies, ensuring scalable and tailored web application solutions.">
+     <meta property="twitter:image"          content="https://juanfuent.es/static/juanfuent.es.open-graph.png">
+     <!-- 
+     # Normalize.css
+     # A modern, HTML5-ready alternative to CSS resets
+     # @see: https://necolas.github.io/normalize.css
+     -->
 
 </head>
 
@@ -20,12 +57,12 @@
   <nav class="main-nav">
 
     <h1>
-      <img src="./img/logosvgmovil.svg">
+      <img src="./img/logosvgmovil.svg" alt="logo moviliencia">
     </h1>
     <ul>
-      <li><a href="#">PROYECTO</a></li>
-      <li><a href="#">MARCAS DEL TRANSPORTE</a></li>
-      <li><a href="#">TESTIMONIOS</a></li>
+      <li><a href="#proyecto" title="mover al proyecto">PROYECTO</a></li>
+      <li><a href="#marcas" title="mover a marcas del trasnporte">MARCAS DEL TRANSPORTE</a></li>
+      <li><a href="#testimonios" title="mover a testimonios">TESTIMONIOS</a></li>
     </ul>
   </nav>
 
@@ -33,22 +70,24 @@
     <img src="./img/mainweb.jpg" alt="Metro de Ciudad de México">
   </section>
 
-  <section class="proyecto">
+  <section class="proyecto" id="proyecto">
     <div class="texto">
       <h2>EL PROYECTO</h2>
       <p>
-        "MOVILIENCIA" es un proyecto de investigación visual y documental que muestra cómo el transporte no solo
+        <b>MOVILIENCIA</b> es un proyecto de investigación visual y documental que muestra cómo el transporte no solo
         funciona como un sistema de movilidad, sino también como un dispositivo que modela, condiciona y transforma al
         cuerpo humano sin importar el medio en el que se trasladen.
       </p>
       <br>
-      <p>Se critican las marcas en la piel, las fisiológicas, oculares y la arquitectura forense. Las personas pasan
+      <p>
+        Se critican las marcas en la piel, las fisiológicas, oculares y la arquitectura forense. Las personas pasan
         hasta seis años de su vida en traslados, en donde las mismas experimentan modificaciones corporales las cuales
-        no siempre son visibilizadas. </p>
+        no siempre son visibilizadas.
+       </p>
     </div>
   </section>
 
-  <section class="galeria">
+  <section class="galeria" id="marcas">
     <!-- Swiper -->
     <div class="swiper swiper-marks">
       <div class="swiper-wrapper">
@@ -68,8 +107,8 @@
           <p>Cada viaje exige que el cuerpo se adapte a espacios reducidos, saturación de
             personas y movimientos bruscos,
             generando posturas forzadas, tensiones musculares y fatiga acumulada. Las piernas, espalda, hombros y
-            tobillos
-            resienten las largas esperas, los trayectos prolongados y la necesidad de mantener el equilibrio. Tanto
+            tobillos resienten las largas esperas, los trayectos prolongados y la necesidad de mantener el equilibrio
+            Tanto
             pasajeros como conductores desarrollan patrones de postura y respiración condicionados por el ritmo del
             tránsito.
             ciudad.</p>
@@ -82,7 +121,7 @@
             restos metálicos que causan resequedad, irritación y aumentan el riesgo de infecciones. El aire seco y la
             ventilación cerrada intensifican la sensación de ardor y desgaste.
           </p>
-        
+
         </div>
         <div class=" swiper-slide">
           <img src="./img/arquitecturaprimera.png" alt="Persona en el metro">
@@ -95,7 +134,7 @@
             vidrios
             rayados que narran el paso constante de la multitud. En camiones sobrecargados, el espacio se deforma y los
             cuerpos se superponen, convirtiendo la estructura en un medio de resistencia.
-</p>
+          </p>
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -103,33 +142,44 @@
 
   </section>
 
-  <section id="columna-row">
+  <section id="testimonios" class="row">
+  
+    <div class="columns eight">
+      
     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper swipermasks">
       <div class="swiper-wrapper">
+        <div class="columns four"> 
+          <i>Yo tengo diabetes y se me hinchan los pies.
+          En el metro nadie te cede el asiento aunque te
+          vean. He terminado con calambres bien
+          fuertes en el camino.</i>
+          Armando | 53 años
+        </div>
         <div class="swiper-slide">
           <div class="brazo-container">
-            <img src="./img/OUCH_S.png" alt="Clean" class="sneaker-clean">
-            <img src="./img/OUCH_R.png" alt="Dirty" class="sneaker-dirty">
+            <img src="./img/OUCH_S.png" alt="Clean" class="image-clean">
+            <img src="./img/OUCH_R.png" alt="Dirty" class="image-red">
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="brazo-container">
-            <img src="./img/SENTADA_S.png" alt="Clean" class="sneaker-clean">
-            <img src="./img/SENTADA_R.png" alt="Dirty" class="sneaker-dirty">
+            <img src="./img/SENTADA_S.png" alt="Clean" class="image-clean">
+            <img src="./img/SENTADA_R.png" alt="Dirty" class="image-red">
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="brazo-container">
-            <img src="./img/OJOS_S.png" alt="clean" class="sneaker-clean">
-            <img src="./img/OJOS_R.png" alt="Dirty" class="sneaker-dirty">
+            <img src="./img/OJOS_S.png" alt="clean" class="image-clean">
+            <img src="./img/OJOS_R.png" alt="Dirty" class="image-red">
           </div>
         </div>
 
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
+    </div>
     </div>
     <div thumbsSlider="" class="swiper swiperthumbs">
       <div class="swiper-wrapper">
@@ -148,12 +198,12 @@
 
   <footer>
 
-    <body>
+    
       <div class="footer">
         <div class="info-left">
-          <p>@MOVILIENCIA.MX</p>
-          <p>contacto@moviliencia.com</p>
-          <p>4421303558</p>
+          <a href="https://instagram.com"> @MOVILIENCIA.MX </a>
+          <a href="mailto:contacto@moviliencia.com"> contacto@moviliencia.com </a> 
+          <a href="tel:4421303558"> 4421303558 </a> 
 
 
           <p>CIUDAD DE MÉXICO 2025</p>
