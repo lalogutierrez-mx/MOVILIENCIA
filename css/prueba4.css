@@ -5,7 +5,7 @@
 @font-face {
   font-family: 'NimbusSanL';
   src: url('NimbusSanL-Regu.woff2') format('woff2'),
-  url('NimbusSanL-Regu.woff') format('woff');
+    url('NimbusSanL-Regu.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -14,7 +14,7 @@
 @font-face {
   font-family: 'MovilienciaSans';
   src: url('MovilienciaSans-Regular.woff'),
-  url('MovilienciaSans-Regular.woff2');
+    url('MovilienciaSans-Regular.woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -47,6 +47,15 @@ img {
   letter-spacing: 1px;
 }
 
+a {
+  transition: all 150ms ease;
+  color: white;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+}
 
 .swiper {
   width: 100%;
@@ -62,11 +71,48 @@ img {
   align-items: center;
 }
 
+.brazo-container {
+  width: 60%;
+  float: left;
+}
+
+.info-container {
+  width: 40%;
+  text-align: left;
+  float: left;
+  height: 100%;
+  padding: 0 1em;
+}
+
+.info-container article {
+  width: 35%;
+  float: right;
+  min-width: 180px;
+}
+
+.info-container h2 {
+  margin-bottom: 1px;
+  padding-bottom: 1em;
+  font-family: "MovilienciaSans";
+  font-size: 2em;
+}
+
+.info-container p {
+  font-family: 'NimbusSanL';
+  font-size: 16px;
+}
+
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+#testimonios .swiper-slide {
+  flex-direction: row;
+  display: flex;
+  align-items: flex-start;
 }
 
 /* --- Navegación principal --- */
@@ -194,8 +240,12 @@ a#tci-link {
   position: relative;
   cursor: col-resize;
   color: #EA0000;
-  width: 100%;
   display: inline-block;
+
+
+
+
+
   img {
     max-width: 100%;
   }
@@ -214,35 +264,36 @@ a#tci-link {
 }
 
 /* --- Footer --- */
-footer {
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 40px 60px;
-    height: 150px;
-    background-color: #111;
-    color: #fff;
-    border-top: 2px solid white;
-  }
-
-  .info-left p,
-  .info-right p {
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px 60px;
+  height: 150px;
+  background-color: #111;
+  color: #fff;
+  border-top: 2px solid white;
+  p {
     margin: 4px 0;
     font-size: 14px;
     letter-spacing: 0.5px;
   }
-
+  .info-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
   /* --- Lado derecho (Instagram y logo) --- */
   .info-right {
     text-align: right;
   }
-
+  
   .logo {
     width: 60px;
     margin-top: 25px;
   }
 }
+
 
 /* slider*/
 .swiper {
@@ -297,6 +348,7 @@ footer {
   height: 100%;
   object-fit: cover;
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 17px;
@@ -306,15 +358,19 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+
 .swiper-slide h3 {
   font-family: "MovilienciaSans";
   text-align: center;
-  font-size: 40px;
+  font-size: 27px;
   /*padding: .1rem;*/
   justify-content: center;
   align-items: center;
-
+  text-transform: lowercase;
+  text-align: left;
+  width: 100%;
 }
+
 .swiper-slide img {
   display: block;
   /* width: 100%; */

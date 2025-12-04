@@ -1,8 +1,8 @@
 class BrazoMask {
 	constructor(_container) {
 		this.container = _container
-		this.clean = this.container.querySelector(".sneaker-clean")
-		this.dirty = this.container.querySelector(".sneaker-dirty")
+		this.clean = this.container.querySelector(".image-clean")
+		this.dirty = this.container.querySelector(".image-red")
 		this.friction = 0.15
 		this.x = 50
 		this.inOver = false
